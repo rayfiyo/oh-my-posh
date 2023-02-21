@@ -1,3 +1,5 @@
+[English type is here](https://github.com/rayfiyo/oh-my-posh/tree/main#what-is-this-repository)
+
 # このレポジトリは何？
 oh-my-posh を公開してるレポジトリ
 
