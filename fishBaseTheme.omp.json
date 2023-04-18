@@ -71,7 +71,7 @@
 				{
 					"type": "text",
 					"style": "diamond",
-					"foreground": "p:blue",
+					"foreground": "#00ADD8",
 					"background": "p:yellow",
 					"leading_diamond": "\ue0b6",
 					"trailing_diamond": "\ue0b0",
