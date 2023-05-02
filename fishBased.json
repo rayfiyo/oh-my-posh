@@ -37,7 +37,7 @@
 						"{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:white{{ end }}",
 						"{{ if gt .Ahead 0 }}p:white{{ end }}"
 					],
-					"background": "p:green",
+					"background": "p:deepskyblue",
 					"background_templates": [
 						"{{ if or (.Working.Changed) (.Staging.Changed) }}#2343e2{{ end }}",
 						"{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}",
