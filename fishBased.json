@@ -13,13 +13,13 @@
 					"style": "diamond",
 					"foreground": "p:mediumblue",
 					"background": "p:mediumblue",
-					"leading_diamond": "\ue0b6",
-					"template": " 🦕🐳\ue0b0 "
+					"leading_diamond": "\ue0d4",
+					"template": " 🦕🐳<p:gopherBlue> ﳑ💨</> "
 				},
 				{
 					"type": "path",
 					"style": "powerline",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "\ue0c6",
 					"foreground": "p:white",
 					"background": "p:deepskyblue",
 					"template": " \uf74a {{ path .Path .Location }} ",
@@ -30,7 +30,7 @@
 				{
 					"type": "git",
 					"style": "powerline",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "\ue0c6",
 					"foreground": "p:black",
 					"foreground_templates": [
 						"{{ if or (.Working.Changed) (.Staging.Changed) }}{{ end }}",
@@ -68,14 +68,6 @@
 			"newline": true,
 			"segments": [
 				{
-					"type": "text",
-					"style": "diamond",
-					"foreground": "p:white",
-					"background": "p:white",
-					"leading_diamond": "\ue0b6",
-					"template": " <p:gopherBlue>ﳑ</>\ue0b0"
-				},
-				{
 					"type": "exit",
 					"style": "diamond",
 					"foreground": "p:white",
@@ -83,8 +75,9 @@
 					"background_templates": [
 						"{{ if gt .Code 0 }}p:red{{ end }}"
 					],
-					"trailing_diamond": "\ue0b4",
-					"template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf00c{{ end }} ",
+					"leading_diamond": "\ue0d4",
+					"trailing_diamond": "\ue0b0",
+					"template": " {{ if gt .Code 0 }}ʕ\uf441ϖ\uf441ʔ \uf00d{{ else }}ʕ◔ϖ◔ʔ \uf00c{{ end }} ",
 					"properties": {
 						"always_enabled": true
 					}
@@ -178,14 +171,14 @@
 		}
 	],
 	"transient_prompt": {
-		"foreground": "p:black",
+		"foreground": "p:blue",
 		"background": "transparent",
-		"template": "<p:seihakuji,transparent>\ue0b6</><,p:seihakuji> {{ .Folder }} </><p:seihakuji,transparent>\ue0b0</> "
+		"template": "<p:deepBlue,transparent>\ue0b6</><,p:deepBlue> {{ .Folder }} </><p:deepBlue,transparent>\ue0b4</> "
 	},
 //	"secondary_prompt": {
 //		"foreground": "p:black",
 //		"background": "transparent",
-//		"template": "<p:seihakuji,transparent>\ue0b6</><,p:seihakuji> > </><p:seihakuji,transparent>\ue0b0</> "
+//		"template": "<p:usuasagi,transparent>\ue0b6</><,p:usuasagi> > </><p:usuasagi,transparent>\ue0b0</> "
 //	},
 	"palette": {
 		"black": "#262B44",
@@ -201,6 +194,7 @@
 		"mediumblue": "#0000cd",
 		"deepskyblue": "00bfff",
 		"paleturquoise": "#AFEEEE",
-		"seihakuji": "#EBF4F4"
+		"deepBlue": "#000080",
+		"usuasagi": "#003775"
 	}
 }
