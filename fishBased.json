@@ -14,7 +14,7 @@
 					"foreground": "p:mediumblue",
 					"background": "p:mediumblue",
 					"leading_diamond": "\ue0d4",
-					"template": " 🦕🐳<p:gopherBlue> ﳑ💨</> "
+					"template": " 🦕🐳  " // " 🦕🐳<p:gopherBlue> ﳑ💨</> "
 				},
 				{
 					"type": "path",
@@ -22,7 +22,7 @@
 					"powerline_symbol": "\ue0c6",
 					"foreground": "p:white",
 					"background": "p:deepskyblue",
-					"template": " \uf74a {{ path .Path .Location }} ",
+					"template": " \u0020{{ path .Path .Location }} ",
 					"properties": {
 						"style": "folder"
 					}
@@ -77,7 +77,7 @@
 					],
 					"leading_diamond": "\ue0d4",
 					"trailing_diamond": "\ue0b0",
-					"template": " {{ if gt .Code 0 }}ʕ\uf441ϖ\uf441ʔ \uf00d{{ else }}ʕ◔ϖ◔ʔ \uf00c{{ end }} ",
+					"template": " {{ if gt .Code 0 }}ʕ◉ ϖ ◉ʔ \uf00d{{ else }}ʕ◔ ϖ ◔ʔ \uf00c{{ end }} ",
 					"properties": {
 						"always_enabled": true
 					}
@@ -190,9 +190,9 @@
 		"yellow": "#F3AE35",
 		"gopherBlue": "#00ADD8",
 		"ubuntu": "#300A24",
-		"limegreen": "32cd32",
+		"limegreen": "#32cd32",
 		"mediumblue": "#0000cd",
-		"deepskyblue": "00bfff",
+		"deepskyblue": "#00bfff",
 		"paleturquoise": "#AFEEEE",
 		"deepBlue": "#000080",
 		"usuasagi": "#003775"
