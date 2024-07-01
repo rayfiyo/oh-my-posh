@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "diamond",
+          "foreground": "p:mediumblue",
+          "background": "p:mediumblue",
+          "leading_diamond": "\ue0d4",
+          "template": " 🦕🐳  "
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\ue0c6",
+          "foreground": "p:white",
+          "background": "p:deepskyblue",
+          "template": " \u0020{{ path .Path .Location }} ",
+          "properties": {
+            "style": "folder"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "exit",
+          "style": "diamond",
+          "foreground": "p:white",
+          "background": "p:limegreen",
+          "background_templates": ["{{ if gt .Code 0 }}p:red{{ end }}"],
+          "leading_diamond": "\ue0d4",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ if gt .Code 0 }}ʕ◉ ϖ ◉ʔ \uf00d{{ else }}ʕ ◔ ϖ ◔ʔ \uf00c{{ end }} ",
+          "properties": {
+            "always_enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "type": "shell",
+          "style": "plain",
+          "foreground": "p:white",
+          "background": "transparent",
+          "template": "in <p:blue><b>{{ .Name }}</b></> <#D2232A>\ue0b3</><#F5841F>\ue0b1</><#FDBA12>\ue0b3</> "
+        },
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "p:white",
+          "background": "transparent",
+          "template": "at <p:blue><b>{{ .CurrentDate | date \"15:04:05\" }}</b></>"
+        }
+      ]
+    }
+  ],
+  "transient_prompt": {
+    "foreground": "p:blue",
+    "background": "transparent",
+    "template": "<p:deepBlue,transparent>\ue0b6</><,p:deepBlue> {{ .Folder }} </><p:deepBlue,transparent>\ue0b4</> "
+  },
+  "palette": {
+    "black": "#262B44",
+    "blue": "#4B95E9",
+    "green": "#59C9A5",
+    "orange": "#F07623",
+    "red": "#D81E5B",
+    "white": "#E0DEF4",
+    "yellow": "#F3AE35",
+    "gopherBlue": "#00ADD8",
+    "ubuntu": "#300A24",
+    "limegreen": "#32cd32",
+    "mediumblue": "#0000cd",
+    "deepskyblue": "#00bfff",
+    "paleturquoise": "#AFEEEE",
+    "deepBlue": "#000080",
+    "usuasagi": "#003775"
+  }
+}
