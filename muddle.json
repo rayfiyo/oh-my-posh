@@ -100,7 +100,7 @@
         {
           "type": "go",
           "style": "plain",
-          "foreground": "p:blue",
+          "foreground": "p:gopherBlue",
           "background": "transparent",
           "template": "\ue627 ",
           "properties": {
@@ -136,9 +136,11 @@
           "style": "plain",
           "foreground_templates": [
             "{{if eq \"Charging\" .State.String}}#b8e994{{end}}",
-            "{{if eq \"Discharging\" .State.String}}#fff34e{{end}}",
-            "{{if eq \"Full\" .State.String}}#33DD2D{{end}}"
+            "{{if eq \"Discharging\" .State.String}}p:yellow{{end}}",
+            "{{if eq \"Full\" .State.String}}p:limegreen{{end}}"
           ],
+          "hoge": "{{if eq \"Charging\" .State.String}}#b8e994{{end}}",
+          "hoge": "{{if eq \"Discharging\" .State.String}}#fff34e{{end}}",
           "properties": {
             "charged_icon": "\uf240 ",
             "charging_icon": "\uf1e6 ",
@@ -209,7 +211,6 @@
     "white": "#E0DEF4",
     "yellow": "#F3AE35",
     "gopherBlue": "#00ADD8",
-    "ubuntu": "#300A24",
     "limegreen": "#32cd32",
     "mediumblue": "#0000cd",
     "deepskyblue": "#00bfff",
