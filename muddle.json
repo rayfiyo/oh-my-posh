@@ -124,16 +124,13 @@
           "style": "plain",
           "foreground": "p:white",
           "background": "transparent",
-          "template": "in <p:blue><b>{{ .Name }}</b></> <#D2232A>\ue0b3</><#F5841F>\ue0b1</><#FDBA12>\ue0b3</> "
+          "template": "<#D2232A>\ue0b3</><#F5841F>\ue0b1</><#FDBA12>\ue0b3</> "
         },
         {
           "type": "time",
           "style": "plain",
           "foreground": "p:white",
           "background": "transparent",
-          "properties": {
-            "time_format": "15:04:05"
-          },
           "template": "at <p:blue><b>{{ .CurrentDate | date \"15:04:05\" }}</b></>",
           "cloud-context_template": " <p:symbol-color>\uebaa</> {{ dateInZone .Format .CurrentDate \"UTC\" }} "
         }
