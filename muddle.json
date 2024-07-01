@@ -49,7 +49,7 @@
             "branch_max_length": 40,
             "fetch_status": true,
             "fetch_upstream_icon": true,
-            "github_icon": "\uf7a3"
+            "github_icon": "\uf09b "
           }
         },
         {
@@ -90,7 +90,7 @@
           "style": "plain",
           "foreground": "p:green",
           "background": "transparent",
-          "template": "\uf898 ",
+          "template": "\ued44 ",
           "properties": {
             "display_mode": "files",
             "fetch_package_manager": false,
@@ -102,7 +102,7 @@
           "style": "plain",
           "foreground": "p:blue",
           "background": "transparent",
-          "template": "\ufcd1 ",
+          "template": "\ue627 ",
           "properties": {
             "fetch_version": false
           }
@@ -112,7 +112,7 @@
           "style": "plain",
           "foreground": "p:yellow",
           "background": "transparent",
-          "template": "\ue235 ",
+          "template": "\ued1b ",
           "properties": {
             "display_mode": "files",
             "fetch_version": false,
