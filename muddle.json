@@ -90,8 +90,11 @@
           "style": "plain",
           "foreground": "p:green",
           "background": "transparent",
-          "template": "\ued44 ",
+          "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
           "properties": {
+            "fetch_package_manager": true,
+            "npm_icon": " <#cc3a3a>\ue5fa</> ",
+            "yarn_icon": " <#348cba>\ue6a7</>",
             "display_mode": "files",
             "fetch_package_manager": false,
             "home_enabled": false
@@ -112,7 +115,7 @@
           "style": "plain",
           "foreground": "p:yellow",
           "background": "transparent",
-          "template": "\ued1b ",
+          "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
           "properties": {
             "display_mode": "files",
             "fetch_version": false,
