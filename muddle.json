@@ -120,6 +120,21 @@
           }
         },
         {
+          "type": "battery",
+          "style": "plain",
+          "_background_templates": [
+            "{{if eq \"Charging\" .State.String}}#b8e994{{end}}",
+            "{{if eq \"Discharging\" .State.String}}#fff34e{{end}}",
+            "{{if eq \"Full\" .State.String}}#33DD2D{{end}}"
+          ],
+          "properties": {
+            "charged_icon": "\uf240 ",
+            "charging_icon": "\uf1e6 ",
+            "discharging_icon": "\ue234 "
+          },
+          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}% "
+        },
+        {
           "type": "shell",
           "style": "plain",
           "foreground": "p:white",
@@ -131,7 +146,10 @@
           "style": "plain",
           "foreground": "p:white",
           "background": "transparent",
-          "template": "at <p:blue><b>{{ .CurrentDate | date \"15:04:05\" }}</b></>",
+          "properties": {
+            "time_format": "15:04:05"
+          },
+          "template": "<p:blue><b>{{ .CurrentDate | date .Format }}</b></>",
           "cloud-context_template": " <p:symbol-color>\uebaa</> {{ dateInZone .Format .CurrentDate \"UTC\" }} "
         }
       ]
