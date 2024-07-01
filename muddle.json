@@ -120,9 +120,21 @@
           }
         },
         {
+          "type": "os",
+          "style": "plain",
+          "template": "\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "properties": {
+            "linux": "\ue712",
+            "macos": "\ue711",
+            "windows": "\ue70f"
+          },
+          "template": "{{.Icon}}",
+          "_template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
+        },
+        {
           "type": "battery",
           "style": "plain",
-          "_background_templates": [
+          "foreground_templates": [
             "{{if eq \"Charging\" .State.String}}#b8e994{{end}}",
             "{{if eq \"Discharging\" .State.String}}#fff34e{{end}}",
             "{{if eq \"Full\" .State.String}}#33DD2D{{end}}"
