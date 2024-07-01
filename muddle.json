@@ -131,7 +131,11 @@
           "style": "plain",
           "foreground": "p:white",
           "background": "transparent",
-          "template": "at <p:blue><b>{{ .CurrentDate | date \"15:04:05\" }}</b></>"
+          "properties": {
+            "time_format": "15:04:05"
+          },
+          "template": "at <p:blue><b>{{ .CurrentDate | date \"15:04:05\" }}</b></>",
+          "cloud-context_template": " <p:symbol-color>\uebaa</> {{ dateInZone .Format .CurrentDate \"UTC\" }} "
         }
       ]
     }
