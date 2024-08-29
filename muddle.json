@@ -14,7 +14,20 @@
           "foreground": "p:mediumblue",
           "background": "p:mediumblue",
           "leading_diamond": "\ue0d4",
-          "template": " 🦕🐳  "
+          "template": " 🦕🐳 "
+        },
+        {
+          "type": "os",
+          "style": "plain",
+          "background": "p:mediumblue",
+          "noused_1_template": "\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "properties": {
+            "linux": "\ue712",
+            "macos": "\ue711",
+            "windows": "\ue70f"
+          },
+          "template": "{{.Icon}}  ",
+          "noused_2_template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
         },
         {
           "type": "path",
@@ -121,18 +134,6 @@
             "fetch_version": false,
             "fetch_virtual_env": false
           }
-        },
-        {
-          "type": "os",
-          "style": "plain",
-          "noused_1_template": "\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
-          "properties": {
-            "linux": "\ue712",
-            "macos": "\ue711",
-            "windows": "\ue70f"
-          },
-          "template": " {{.Icon}} ",
-          "noused_2_template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
         },
         {
           "type": "battery",
