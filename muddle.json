@@ -11,7 +11,6 @@
         {
           "type": "session",
           "style": "diamond",
-          "foreground": "p:mediumblue",
           "background": "p:mediumblue",
           "leading_diamond": "\ue0d4",
           "template": " 🦕🐳 "
