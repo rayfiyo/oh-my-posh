@@ -125,14 +125,14 @@
         {
           "type": "os",
           "style": "plain",
-          "template": "\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "noused_1_template": "\ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
           "properties": {
             "linux": "\ue712",
             "macos": "\ue711",
             "windows": "\ue70f"
           },
           "template": " {{.Icon}} ",
-          "_template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
+          "noused_2_template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
         },
         {
           "type": "battery",
