@@ -131,7 +131,7 @@
             "macos": "\ue711",
             "windows": "\ue70f"
           },
-          "template": "{{.Icon}}",
+          "template": " {{.Icon}} ",
           "_template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
         },
         {
